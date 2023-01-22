@@ -12,6 +12,10 @@ main {
     padding: 0px;
 }
 
+input:focus::placeholder {
+    color: transparent;
+  }
+
 #search {
     margin-top: 5rem;
     width: 30rem;
