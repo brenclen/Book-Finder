@@ -2,6 +2,18 @@ let btn = document.querySelector("#book-button");
 let section = document.querySelector("#searched-book");
 $("#searched-book").hide();
 
+let input = document.querySelector("#book_title");
+
+input.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      btn.click();
+    }
+  });
+
 
 function addBook() {
     let url = "https://www.googleapis.com/books/v1/volumes?q=";

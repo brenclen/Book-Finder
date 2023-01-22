@@ -17,8 +17,8 @@
         <h1>Book Lookup</h1>
 
         <div id="search-div">
-            <form action="" id="search">
-                <input type="text" id="book_title" placeholder="Enter book here...">
+            <form action="" id="search" onsubmit="addBook">
+                <input type="search" id="book_title" placeholder="Enter book here..." autocomplete="off" onkeypress="">
                 <button id="book-button" type="button">Search</button>
             </form>
         </div>
